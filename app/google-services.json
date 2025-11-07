@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "808083105443",
+    "project_id": "micallemx",
+    "storage_bucket": "micallemx.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808083105443:android:57100109b1a784b6184116",
+        "android_client_info": {
+          "package_name": "com.micalle.mx"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5j-RjnPMme5b-cwgOY6qpySCsmNXhPHA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_light">#F8F9FA</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#5F6368</color>
+    <color name="google_blue">#4285F4</color>
+    <color name="success_blue">#1976D2</color>
+    <color name="warning_orange">#FF6D00</color>
+</resources>
