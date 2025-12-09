@@ -6,4 +6,5 @@
     <color name="google_blue">#4285F4</color>
     <color name="success_blue">#1976D2</color>
     <color name="warning_orange">#FF6D00</color>
+    <color name="red">#FF0000</color>
 </resources>

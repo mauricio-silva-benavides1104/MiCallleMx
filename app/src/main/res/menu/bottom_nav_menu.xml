@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/homeFragment"
-        android:title="Inicio"
-         />
-
+        android:id="@+id/reportsFragment"
+        android:title="Reportes"
+        android:icon="@android:drawable/ic_menu_report_image" />
+    <item
+        android:id="@+id/myReportsFragment"
+        android:title="Mis reportes"
+        android:icon="@android:drawable/ic_menu_myplaces" />
+    <item
+        android:id="@+id/accountFragment"
+        android:title="Cuenta"
+        android:icon="@android:drawable/ic_menu_my_calendar" />
+    <item
+        android:id="@+id/mapFragment"
+        android:title="Mapa"
+        android:icon="@android:drawable/ic_dialog_map" />
 </menu>
