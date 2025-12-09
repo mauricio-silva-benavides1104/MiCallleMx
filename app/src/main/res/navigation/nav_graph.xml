@@ -7,6 +7,47 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.micalle.mx.HomeFragment"
-        android:label="Inicio" />
+        android:label="Inicio">
+        <!-- Acción para navegar a ReportsFragment -->
+        <action
+            android:id="@+id/action_homeFragment_to_reportsFragment"
+            app:destination="@id/reportsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/reportsFragment"
+        android:name="com.micalle.mx.ReportsFragment"
+        android:label="Reportes">
+        <!-- Acción para navegar a ReportFormFragment -->
+        <action
+            android:id="@+id/action_reportsFragment_to_reportFormFragment"
+            app:destination="@id/reportFormFragment" />
+    </fragment>
+
+    <!-- 🔹 NUEVO: Fragmento para "Mis Reportes" -->
+    <fragment
+        android:id="@+id/myReportsFragment"
+        android:name="com.micalle.mx.MyReportsFragment"
+        android:label="Mis Reportes" />
+
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.micalle.mx.AccountFragment"
+        android:label="Cuenta" />
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.micalle.mx.MapFragment"
+        android:label="Mapa" />
+
+    <fragment
+        android:id="@+id/reportFormFragment"
+        android:name="com.micalle.mx.ReportFormFragment"
+        android:label="Subir reporte">
+        <!-- Acción para navegar de vuelta a ReportsFragment -->
+        <action
+            android:id="@+id/action_reportFormFragment_to_reportsFragment"
+            app:destination="@id/reportsFragment" />
+    </fragment>
 
 </navigation>

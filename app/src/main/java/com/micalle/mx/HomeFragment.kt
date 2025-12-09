@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.navigation.fragment.findNavController
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
@@ -16,6 +17,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.micalle.mx.databinding.FragmentHomeBinding
 import android.app.Activity.RESULT_OK
+
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
@@ -63,6 +65,9 @@ class HomeFragment : Fragment() {
             binding.welcomeText.text = "¡Hola, ${user.displayName ?: "vecino"}!"
             binding.subtitleText.text = "Gracias por cuidar tu comunidad 💚"
             binding.btnLogin.visibility = View.GONE
+
+            // ✅ Navega a ReportsFragment después de iniciar sesión
+            findNavController().navigate(R.id.action_homeFragment_to_reportsFragment)
         } else {
             binding.welcomeText.text = "¡Bienvenido a MiCalleMX!"
             binding.subtitleText.text = "Reporta problemas en tu calle y mejora tu comunidad"

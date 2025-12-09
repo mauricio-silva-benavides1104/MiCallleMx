@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.navigation.safeargs)
     id("com.google.gms.google-services")
 }
 
@@ -57,5 +58,13 @@ dependencies {
     implementation("com.google.firebase:firebase-firestore-ktx")
     implementation("com.google.firebase:firebase-storage-ktx")
     implementation("com.google.android.gms:play-services-auth:21.2.0")
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.16.0")
+    implementation("de.hdodenhof:circleimageview:3.1.0")
+// Puedes usar la última versión
+    implementation("com.google.android.material:material:1.10.0")
+// Para TextInputLayout
+    implementation("com.google.android.gms:play-services-maps:18.2.0")
+// Usa la última versión disponible
 
 }
